@@ -1,29 +1,16 @@
-# VUE Collection + JSON client
+# Ejemplo de proyecto de integración continua
 
-Vue.js Collection + JSON applicacion (client + PHP REST API server)
+Ejemplo de proyecto PHP con test unitarios para utilizar con Travis CI
 
-## Build Setup
-
-Install XAMPP and copy the repository folder inside `htdocs`
+## Instalación
 
 ``` bash
-# install server dependencies
+# Instalar dependencias
 composer install
-
-# install client dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
 ```
 
-## Dev server access
+## Test
 
-- API: http://localhost/REPO_FOLDER/api
-- Client: http://localhost:8080
-
-## Production Server access (Heroku)
-
-- API: http://APP_NAME.herokuapp.com/api
-- Client: http://APP_NAME.herokuapp.com/dist
+``` bash
+vendor/phpunit/phpunit/phpunit tests/
+```
