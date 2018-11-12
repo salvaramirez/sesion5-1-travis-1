@@ -5,17 +5,17 @@ require 'Calculator.php';
 class CalculatorTests extends TestCase
 {
     private $calculator;
- 
+
     protected function setUp()
     {
         $this->calculator = new Calculator();
     }
- 
+
     protected function tearDown()
     {
         $this->calculator = NULL;
     }
- 
+
     public function testAdd()
     {
         $result = $this->calculator->add(1, 2);
@@ -33,5 +33,10 @@ class CalculatorTests extends TestCase
         $result = $this->calculator->division(10, 2);
         $this->assertEquals(5, $result);
     }
- 
+    public function testEspar()
+    {
+        $result = $this->calculator->esPar(10);
+        $this->assertEquals(0, $result);
+    }
+
 }
