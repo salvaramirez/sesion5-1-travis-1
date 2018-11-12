@@ -16,5 +16,9 @@ class Calculator
     {
         return $a / $b;
     }
+ public function esImpar($a)
+    {
+        return $a % 2;
+    }
  
 }
