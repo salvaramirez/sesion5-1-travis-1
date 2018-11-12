@@ -20,6 +20,10 @@ class Calculator
     {
         return $a % 2;
     }
-    
+    public function esImpar($a)
+    {
+        return $a % 2;
+    }
+
 
 }
