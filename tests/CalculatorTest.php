@@ -38,5 +38,6 @@ class CalculatorTests extends TestCase
         $result = $this->calculator->esPar(10);
         $this->assertEquals(0, $result);
     }
+    
 
 }

@@ -20,5 +20,6 @@ class Calculator
     {
         return $a % 2;
     }
+    
 
 }
